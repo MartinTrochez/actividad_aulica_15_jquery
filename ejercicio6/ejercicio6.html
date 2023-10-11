@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<h1>Noticias</h1>
+	<br>
+	<div class="noticia">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+		cupidatat.</div>
+	<br>
+	<div class="noticia">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+		cupidatat.</div>
+	<br>
+	<div class="noticia">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur
+		cupidatat.</div>
+
+	<button id="boton-1">Fuente Pequeña</button>
+	<button id="boton-2">Fuente Media</button>
+	<button id="boton-3">Fuente Grande</button>
+
+	<script>
+		let x = $(document)
+		x.ready(comenzar)
+
+		function comenzar() {
+			let x = $("#boton-1")
+			x.click(fuentePequeña)
+			x = $("#boton-2")
+			x.click(fuenteMedia)
+			x = $("#boton-3")
+			x.click(fuenteGrande)
+		}
+
+		function fuentePequeña() {
+			let x = $(".noticia")
+			x.css("font-size", "12px")
+		}
+
+		function fuenteMedia() {
+			let x = $(".noticia")
+			x.css("font-size", "14px")
+		}
+
+		function fuenteGrande() {
+			let x = $(".noticia")
+			x.css("font-size", "16px")
+		}
+	</script>
+</body>
+
+</html>

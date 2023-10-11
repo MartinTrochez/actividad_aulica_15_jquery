@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<input type="text" id="input-1" value="input-2" style="color: blue;">
+	<br>
+	<input type="text" id="input-2" value="input-2" style="color: blue;">
+	<script>
+		$(document).ready(eventoFocus)
+
+		function eventoFocus() {
+			$("#input-1").focus(focusInput)
+			$("#input-2").focus(focusInput)
+		}
+
+		function focusInput() {
+			$(this).css("color", "red")
+		}
+	</script>
+</body>
+
+</html>

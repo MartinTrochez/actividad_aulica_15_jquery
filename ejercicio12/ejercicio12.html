@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td>123123</td>
+			<td>123123</td>
+		</tr>
+		<tr>
+			<td>234234</td>
+			<td>2345234</td>
+		</tr>
+	</table>
+	<script>
+		$(document).ready(eventoMouse)
+
+		function eventoMouse() {
+			$("td").mouseover(overMouse)
+			$("td").mouseout(outMouse)
+		}
+
+		function overMouse() {
+			$(this).css("background-color", "#002300")
+		}
+		function outMouse() {
+			$(this).css("background-color", "#ffffff")
+		}
+	</script>
+</body>
+
+</html>

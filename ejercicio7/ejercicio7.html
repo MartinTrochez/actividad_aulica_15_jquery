@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<table id="tabla-1">
+		<tr>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr>
+	</table>
+	<table id="tabla-2">
+		<tr>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr>
+		<tr>
+			<td>123</td>
+			<td>123</td>
+			<td>123</td>
+		</tr>
+	</table>
+
+	<button id="boton-1">Reempalazar datos en la cadena</button>
+
+	<script>
+		let x = $(document)
+		x.ready(comenzar)
+
+		function comenzar() {
+			let x = $("#boton-1")
+			x.click(reemplazarCaracteres)
+		}
+
+		function reemplazarCaracteres() {
+			let x = $("#tabla-1 tr")
+			x.text("--------")
+		}
+	</script>
+</body>
+
+</html>

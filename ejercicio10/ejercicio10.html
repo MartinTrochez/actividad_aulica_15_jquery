@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<button id="boton-1">Mostrar Html head</button>
+	<button id="boton-2">Mostrar Html body</button>
+	<script>
+		$(document).ready(eventoClick)
+
+		function eventoClick() {
+			$("#boton-1").click(mostrarHead)
+			$("#boton-2").click(mostrarBody)
+		}
+
+		function mostrarHead() {
+			let x = $("head")
+			alert(x.html())
+		}
+
+		function mostrarBody() {
+			let x = $("body")
+			alert(x.html())
+		}
+	</script>
+</body>
+
+</html>

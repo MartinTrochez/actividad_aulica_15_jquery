@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<ul>
+		<li>Elemento 1</li>
+		<li>Elemento 2</li>
+		<li>Elemento 3</li>
+		<li>Elemento 4</li>
+	</ul>
+
+	<script>
+		let x = $(document)
+		x.ready(clickEvento)
+		function clickEvento() {
+			let x = $("li")
+			x.click(liEvento)
+		}
+		function liEvento() {
+			let x = $(this)
+			x.hide()
+		}
+	</script>
+</body>
+
+</html>

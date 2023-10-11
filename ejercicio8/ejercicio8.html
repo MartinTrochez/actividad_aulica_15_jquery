@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+	<a href=""></a>
+	<br>
+
+	<button id="link-1">Link 1</button>
+	<button id="link-2">Link 2</button>
+	<button id="link-3">Link 3</button>
+	<script>
+		let x = $(document)
+
+		x.ready(eventoBoton)
+
+		function eventoBoton() {
+			let x = $("#link-1")
+			x.click(crearLink1)
+			x = $("#link-2")
+			x.click(crearLink2)
+			x = $("#link-3")
+			x.click(crearLink3)
+		}
+
+		function crearLink1() {
+			let x = $("a")
+			x.attr("href", "https://www.google.com")
+			x.text("google")
+		}
+		function crearLink3() {
+			let x = $("a")
+			x.attr("href", "https://www.bing.com")
+			x.text("bing")
+		}
+		function crearLink2() {
+			let x = $("a")
+			x.attr("href", "https://www.yahoo.com")
+			x.text("yahoo")
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<table id="tabla-1">
+		<thead>
+			<tr>
+				<td>123123</td>
+				<td>123123</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>123123</td>
+				<td>123123</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button id="boton-anadir">Anadir Clase</button>
+	<button id="boton-quitar">Quitar Clase</button>
+
+	<script>
+		let x = $(document)
+		x.ready(eventoClick)
+
+		function eventoClick() {
+			let x = $("#boton-anadir")
+			x.click(anadirClase)
+			x = $("#boton-quitar")
+			x.click(quitarClase)
+		}
+
+		function anadirClase() {
+			let x = $("thead")
+			x.addClass("theader-styles")
+			x = $("tbody")
+			x.addClass("tbody-styles")
+		}
+
+		function quitarClase() {
+			let x = $("thead")
+			x.removeClass("theader-styles")
+			x = $("tbody")
+			x.removeClass("tbody-styles")
+		}
+	</script>
+</body>
+
+</html>

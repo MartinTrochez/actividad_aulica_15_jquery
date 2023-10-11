@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<form method="post">
+		<input type="text" name="input-1" value="input-1">
+	</form>
+	<script>
+		$(document).ready(eventoBlur)
+
+		function eventoBlur() {
+			$("input").blur(pierdeFoco)
+		}
+
+		function pierdeFoco() {
+			let x = $(this)
+			let cadena = x.val()
+			if (cadena.length == 0) {
+				alert("No ingreso datos")
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>
