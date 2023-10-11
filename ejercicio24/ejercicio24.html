@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+	<a href="https://www.google.com">Google</a>
+	<a href="https://www.google.com.ar">Google.ar</a>
+	<a href="https://www.bing.com">Bing</a>
+	<a href="https://www.bing.com.ar">Bing.ar</a>
+	<script>
+		$(document).ready(comenzar)
+
+		function comenzar() {
+			$("a").each(resaltarSubdominios)
+		}
+
+		function resaltarSubdominios() {
+			let url = $(this).attr("href").toLowerCase()
+			if (url.indexOf(".ar") != -1) {
+				$(this).css("background-color", "red")
+			}
+		}
+
+	</script>
+</body>
+
+</html>

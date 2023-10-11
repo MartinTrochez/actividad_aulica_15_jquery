@@ -19,18 +19,17 @@
 		<p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
 		<p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
 		<p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
-		<p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
 	</div>
 
 	<script>
 		$(document).ready(eventoMouse)
 
 		function eventoMouse() {
-			$("#id-1").click(ocultarDiv)
+			$("#id-1").click(reducirOpacidadDiv)
 		}
 
-		function ocultarDiv() {
-			$(this).hide("slow", mostrarDiv)
+		function reducirOpacidadDiv() {
+			$(this).fadeTo("slow", 0.20, mostrarDiv)
 		}
 
 		function mostrarDiv() {
