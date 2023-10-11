@@ -22,8 +22,8 @@
 		}
 
 		function resaltarSubdominios() {
-			let url = $(this).attr("href").toLowerCase()
-			if (url.indexOf(".ar") != -1) {
+			let url = $(this).attr("href")
+			if (url.includes(".ar")) {
 				$(this).css("background-color", "red")
 			}
 		}
